@@ -6,3 +6,7 @@
 2. [webpack-css-extract-plugin, 웹팩의 css-extract 플러그인을 다루어 봅시다](./webpack-css-extract-plugin/README.md)
 3. [webpack-split-chunks, 웹팩의 청크 파일 분리를 다루어 봅시다](./webpack-split-chunks/README.md)
 4. [webpack-runtime-chunk, 런타임 코드 파일 분리를 다루어 봅시다](./webpack-runtime-chunks/README.md)
+
+## webpack을 다루는 좋은 글
+
+[Webpack을 활용한 성능향상 - 캐싱 활용하기](https://yceffort.kr/2020/07/make-use-of-long-term-caching)
