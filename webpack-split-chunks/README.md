@@ -196,3 +196,7 @@ optimization: {
 정적으로 import된 모듈에 대해서는 별도의 청크로 만든다. 여기서, 주목해야 할 점은 동적으로 import된 모듈들 또한 별도로 청크를 만들어 코드를 분리한다. 동적으로 import된 모듈은 파일이 분리되어 있어야 동적으로 불러올 수 있기 때문이다.
 
 ![chunks-initial](./assets/chunks-initial.png)
+
+## Reference
+
+[Webpack 4 — Mysterious SplitChunks Plugin](https://medium.com/dailyjs/webpack-4-splitchunks-plugin-d9fbbe091fd0)
