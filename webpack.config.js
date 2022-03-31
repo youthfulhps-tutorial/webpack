@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   mode: 'none',
@@ -14,5 +15,8 @@ module.exports = {
         use: ['style-loader','css-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.ProgressPlugin(),
+  ],
 };

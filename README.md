@@ -202,3 +202,13 @@ modules: {
   ];
 }
 ```
+
+### Plugin
+
+플러그인은 웹팩의 해당 결과물에 대해 형태를 바꾸는 역할을 한다. 웹팩의 기본적인 동작에 추가적인 기능을 제공하는 속성이다.
+
+```js
+module.exports = {
+  plugins: [new webpack.ProgressPlugin()];
+}
+```
