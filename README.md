@@ -127,14 +127,77 @@ css는 CSS 로더를 설치하여 웹팩 설정에 추가해줄 수 있다.
 ~$ yarn add --dev css-loader
 ```
 
-`rules`의 값으로 객체 배열을 전달한다. `test`는 로더를 적용할 파일 유형, `use`는 해당 파일에 적용할 로더 이름을 제공한다.
+```js
+module: {
+  //객체 배열로 전달
+  rules: [
+    {
+      //로더를 적용할 파일 유형
+      test: /\.css$/,
+      //해당 파일에 적용할 로더 이름
+      use: ["css-loader"],
+    },
+  ];
+}
+```
+
+**로더의 적용 순서** 는 다음 규칙을 따른다.
+
+- 로더를 적용할 파일 유형이 같다면, rules 객체 배열에서 먼저 나오는 게 우선 적용된다.
 
 ```js
 module: {
   rules: [
     {
+      //로더를 적용할 파일 유형
       test: /\.css$/,
+      //해당 파일에 적용할 로더 이름
+      use: ["style-loader"],
+    },
+    {
+      //로더를 적용할 파일 유형
+      test: /\.css$/,
+      //해당 파일에 적용할 로더 이름
       use: ["css-loader"],
+    },
+  ];
+}
+```
+
+- 로더를 적용할 파일 유형이 같다면, use 배열에서 오른쪽에서 왼쪽 순으로 적용된다.
+  가령, scss 파일의 경우 css로 변환된 후 css 파일을 읽을 수 있도록 하기 위해
+  scss 로더를 우선 적용하고, css 로더를 그 다음으로 적용한다.
+
+```js
+modules: {
+  rules: [
+    {
+      //로더를 적용할 파일 유형
+      test: /\.scss$/,
+      //해당 파일에 적용할 로더 이름
+      use: ["style-loader", "css-loader", "sass-loader"],
+    },
+  ];
+}
+```
+
+- use의 배열에 로더를 제공하는 방법도 있지만, options이 포함된 객체 형태로도 전달할 수 있다.
+
+```js
+modules: {
+  rules: [
+    {
+      test: /\.scss$/,
+      use: [
+        { loader: "style-loader" },
+        {
+          loader: "css-loader",
+          options: {
+            modules: true,
+          },
+        },
+        { loader: "sass-loader" },
+      ],
     },
   ];
 }
