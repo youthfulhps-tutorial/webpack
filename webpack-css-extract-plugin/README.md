@@ -45,3 +45,7 @@ MiniCssExtractPlugin은 css-loader를 통해 추출된 css를 파일명에 따�
 ```html
 <link rel="stylesheet" href="./dist/main.css" />
 ```
+
+## Reference
+
+[Webpack 핸드북, Code Splitting](https://joshua1988.github.io/webpack-guide/tutorials/code-splitting.html)
