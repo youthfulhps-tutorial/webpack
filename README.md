@@ -7,6 +7,7 @@
 3. [webpack-split-chunks, 웹팩의 청크 파일 분리를 다루어 봅시다](./webpack-split-chunks/README.md)
 4. [webpack-runtime-chunk, 런타임 코드 파일 분리를 다루어 봅시다](./webpack-runtime-chunks/README.md)
 5. [webpack-dev-server, 웹팩 데브서버를 다루어 봅시다.](./webpack-dev-server/README.md)
+6. [webpack-tree-shaking](./webpack-tree-shaking/README.md)
 
 ## webpack을 다루는 좋은 글
 
