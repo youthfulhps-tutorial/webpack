@@ -89,3 +89,8 @@ devServer: {
   },
 },
 ```
+
+## Reference
+
+[PoiemaWeb, Webpack DevServer](https://poiemaweb.com/devServer)
+[웹팩 핸드북, Webpack Dev Server](https://joshua1988.github.io/webpack-guide/devtools/webpack-dev-server.html#webpack-dev-server)
