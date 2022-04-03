@@ -9,6 +9,7 @@
 5. [webpack-dev-server, 웹팩 데브서버를 다루어 봅시다](./webpack-dev-server/README.md)
 6. [webpack-mode-config, 웹팩의 모드 설정을 다루어 봅시다](./webpack-mode-config/README.md)
 7. [webpack-tree-shaking, 웹팩 트리-쉐이킹에 대해 이해해 봅시다](./webpack-tree-shaking/README.md)
+8. [webpack-config-merge, 웹팩 설정 병합을 다루어 봅시다](./webpack-config-merge/README.md)
 
 ## webpack을 다루는 좋은 글
 
